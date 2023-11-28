@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shouldly" Version="4.2.1" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\01.Core\Testing.Core.Domain\Testing.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\src\02.Infra\Testing.Infra.Data.Command.Sql\Testing.Infra.Data.Command.Sql.csproj" />
+    <ProjectReference Include="..\..\Testing.ApplicationService\Testing.ApplicationService.csproj" />
+  </ItemGroup>
+
+</Project>
